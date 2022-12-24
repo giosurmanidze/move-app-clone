@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header";
+import BurgerMenu from "./layouts/BurgerMenu";
+import { useState } from "react";
+import { Route, Routes } from "react-router-dom";
+import Home from "./components/Home";
+import Movie from "./components/Movie";
+import Footer from "./components/Footer";
 
-function App() {
+const App = () => {
+  const [isShow, setIsShow] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BurgerMenu
+        cName={isShow ? "showBurger" : "hideBurger"}
+        setIsShow={setIsShow}
+      />
+      <Header setIsShow={setIsShow} />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/movie/:id" element={<Movie />}/>
+      </Routes>
+      <Footer />
+    </>
   );
-}
+};
 
 export default App;

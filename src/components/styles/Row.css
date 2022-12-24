@@ -1,0 +1,191 @@
+.row {
+    width: 95%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+  .row__title__icons h2 {
+    font-size: 15px;
+    position: relative;
+  }
+  .date__row {
+    height: 35vh;
+    padding-top: 50px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-image: url("https://static.adjaranet.com/movies/covers/510/646/878560646-28fdc8ac4e690efd14d8d71f109990de.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 35px;
+    margin-top: 30px;
+    position: relative;
+  }
+
+  .date__row::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: center top / cover no-repeat rgba(0, 46, 71, 0.7);
+    backdrop-filter: blur(25px);
+  }
+ 
+
+  
+ 
+  
+  .row__posters {
+    transition: transform 0.5s ease 0s;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    flex-shrink: 0;
+    position: relative;
+    padding: 10px;
+    transform: translate3d(0px, 0px, 0px);
+    will-change: transform;
+    transition: all 0.5s ease 0s;
+    overflow: auto scroll;
+  }
+  .change__bg {
+    margin-top: 40px;
+    height: 28vh;
+    width: 100%;
+    padding: 10px;
+  }
+  .change__bg::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://www.adjaranet.com/turkish-d170fc0aaddf4ff229f6838ed25f60ff.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .row__posters::-webkit-scrollbar {
+    display: none;
+  }
+  .row h2 {
+    font-size: 15px;
+    color: rgb(213, 221, 245);
+    margin-left: 10px;
+  }
+  
+  .row__poster {
+    object-fit: contain;
+    width: 100%;
+    max-height: 330px;
+    height: 150px;
+    margin-right: 10px;
+    transition: transform 450ms;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 5px;
+    scroll-behavior: smooth;
+  }
+  
+  .row__poster:hover {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+  .row__title__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .row__icons--arrow .row__icon {
+    width: 20px;
+    height: 20px;
+    color: rgb(213, 221, 245);
+    position: relative;
+  }
+  
+  .row__icons--arrow {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  
+  .date__choose--btn {
+    padding: 15px;
+    padding-top: 10px;
+  }
+  .hide {
+    display: none;
+  }
+  
+  .show {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: center top / cover no-repeat rgba(0, 46, 71, 0.7);
+    backdrop-filter: blur(35px);
+}  
+  
+  .date__choose--btn button {
+    font-size: 16px;
+    color: rgb(213, 221, 245);
+    cursor: pointer;
+    padding: 5px 10px 5px;
+    margin-top: 10px;
+  }
+  
+  .row__title__icons h2 {
+    padding-bottom: 20px;
+  }
+  
+  .active__btn {
+    padding: 6px 10px 2px;
+    background-color: rgb(26, 144, 207);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .channel__router {
+    height: 70px;
+    width: 90px;
+    flex-shrink: 0;
+    margin-bottom: 0px;
+    margin-right: 8px;
+    background: rgb(45, 49, 56);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .channel__router img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    width: 42px;
+    height: 42px;
+  }
+  
+  .channels {
+    display: flex;
+    transform: translate3d(0px, 0px, 0px);
+    will-change: transform;
+    transition: all 0.5s ease 0s;
+    overflow: auto scroll;
+  }
+
+
+  .hide__arrows {
+    display: none;
+  }

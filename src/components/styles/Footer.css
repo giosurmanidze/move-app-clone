@@ -1,0 +1,39 @@
+.footer__div {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(25, 27, 32);
+    width: 100%;
+    margin-top: 30px;
+}
+
+.footer__div .footer__btns {
+    font-size: 12px;
+    padding: 15px 0px;
+    margin: 0px;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 6px;
+    gap: 0.3rem;
+    width: 100%;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.footer__btns button,.copyright {
+    color: #D5DDF5 ;
+    font-size: 15px;
+
+}
+
+.activee {
+    background: rgb(22, 131, 198);
+    padding: 5px 8px 3px;
+    border-radius: 4px;
+    font-size: 14px;
+}

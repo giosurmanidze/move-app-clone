@@ -1,0 +1,57 @@
+.Seasons__movie--list {
+    width: 100%;
+}
+.Seasons__movie--list h2 {
+    font-size: 15px;
+    color: rgb(213, 221, 245);
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.Seasons__movie--list .Seasons__movie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+}
+.season__card {
+    height: 110px;
+    width: 45%;
+
+}
+
+.season__card img {
+    object-fit: cover;
+    width: 100%;
+    height: 105px;
+    filter: brightness(60%);
+    
+}
+.season__card {
+    position: relative;
+}
+
+
+.season__card .text__img {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+}
+
+.text__img .title {
+    font-size: 13px;
+    color: rgb(213, 221, 245);
+    line-height: 1.2;
+    margin-bottom: 7px;
+
+}
+
+.text__img .seasons__detail {
+    line-height: 1.4;
+    margin-bottom: 7px;
+    color: rgb(213, 221, 245);
+    font-size: 12px;
+}
+
