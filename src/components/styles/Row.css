@@ -7,10 +7,9 @@
   }
   .row__title__icons h2 {
     font-size: 15px;
-    position: relative;
   }
   .date__row {
-    height: 35vh;
+    min-height: 37vh;
     padding-top: 50px;
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -53,9 +52,13 @@
     transition: all 0.5s ease 0s;
     overflow: auto scroll;
   }
+
+  .row__posters--2 {
+    padding-top: 40px;
+  }
   .change__bg {
     margin-top: 40px;
-    height: 28vh;
+    min-height: 35vh;
     width: 100%;
     padding: 10px;
   }
@@ -102,6 +105,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
   }
   
   .row__icons--arrow .row__icon {
@@ -119,7 +123,7 @@
   
   .date__choose--btn {
     padding: 15px;
-    padding-top: 10px;
+    padding-top: 50px;
   }
   .hide {
     display: none;
@@ -144,16 +148,23 @@
     padding: 5px 10px 5px;
     margin-top: 10px;
   }
-  
-  .row__title__icons h2 {
-    padding-bottom: 20px;
-  }
-  
+
   .active__btn {
     padding: 6px 10px 2px;
     background-color: rgb(26, 144, 207);
     border-radius: 4px;
     cursor: pointer;
+  }
+
+  .row__title__icons h2 {
+    z-index: 50;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .row__title__icons .header__2 {
+    top: 10px;
+    position: absolute;
+
   }
   
   .channel__router {

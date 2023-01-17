@@ -16,6 +16,7 @@
   gap: 3rem;
   padding: 10px;
   font-size: 13px;
+  z-index: 100;
 }
 
 .showBurger {
@@ -36,6 +37,7 @@
   align-items: center;
   gap: 0.5rem;
   margin-top: 15px;
+  align-items: center;
 }
 .burger__pages--icons--box .linkTo {
   color: rgb(221, 221, 221);

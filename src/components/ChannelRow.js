@@ -27,14 +27,7 @@ const ChannelRow = ({ title }) => {
       </div>
 
       <div className="row__posters channels" ref={ref}>
-        {/* {movies.map((movie) => (
-          <img
-            key={movie.id}
-            className="row__poster"
-            src={`${baseUrl}${movie.poster_path}`}
-            alt={movie.name}
-          />
-        ))} */}
+      
         {channels.map((channel) => (
           <a className="channel__router" href={channel.href} key={channel.id}>
             <img src={channel.img} alt={channel.name} />

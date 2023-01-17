@@ -26,10 +26,11 @@ const Row = ({ title, fetchUrl, show, setSelectedOpt, selectedOpt, countrySide, 
     fetchData();
   }, [fetchUrl]);
 
+
   return (
     <div className={`row ${countrySide && "change__bg"}  ${show && "date__row"}`}>
       <div className="row__title__icons">
-        <h2>{title}</h2>
+        <h2 className={`${show && 'header__2'}`}>{title}</h2>
 
         <div className={`row__icons--arrow ${noArrow && 'hide__arrows'}`}>
           <button onClick={() => scroll(-300)}>
@@ -44,13 +45,13 @@ const Row = ({ title, fetchUrl, show, setSelectedOpt, selectedOpt, countrySide, 
         </div>
       </div>
       <div className={`date__choose--btn hide ${show && "show"}`}>
-        <h2>ტოპ ფილმები</h2>
+        {/* <h2>ტოპ ფილმები</h2> */}
         <button onClick={() => setSelectedOpt("day")} className={`${selectedOpt === "day" && 'active__btn'}`}>დღის</button>
         <button onClick={() => setSelectedOpt("week")} className={`${selectedOpt === "week" && 'active__btn'}`}>კვირის</button>
         <button onClick={() => setSelectedOpt("month")} className={`${selectedOpt === "month" && 'active__btn'}`}>თვის</button>
       </div>
       
-      <div className="row__posters" ref={ref}>
+      <div className={`row__posters ${show && 'row__posters--2'}`} ref={ref}>
         {movies.map((movie) => (
           <img
           onClick={() => navigate(`/movie/${movie.id}`)}

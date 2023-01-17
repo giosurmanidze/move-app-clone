@@ -10,7 +10,7 @@ const API_KEY = "9c52cc6fe0b05b5e813aa331c7039d73";
 const Home = () => {
   const [selectedOpt, setSelectedOpt] = useState("day");
   const fetchTrending = `/trending/all/${selectedOpt}?api_key=${API_KEY}&language=en-US`;
-
+  
   return (
     <>
       <Banner />
@@ -28,14 +28,7 @@ const Home = () => {
       <Row title="ახალი დამატებული ფილმები"  fetchUrl={requests.fetchActionMovies}/>
       <Seasons />
       <Row title="თურქული სერიალები" countrySide={true}  fetchUrl={requests.fetchTopRated}/>
-      <Row
-        title="ტოპ ფილმები"
-        selectedOpt={selectedOpt}
-        setSelectedOpt={setSelectedOpt}
-        show={true}
-        bg={false}
-        fetchUrl={fetchTrending}
-      />
+      
       <Row title="თრეილერები"  fetchUrl={requests.fetchRomanceMovies}/>
       
     </>
